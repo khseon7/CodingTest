@@ -7,5 +7,5 @@ for _ in range(n):
   tuple_list[x]=1
 for _ in range(m):
   x=sys.stdin.readline().rstrip()
-  if (x in tuple_list.keys()): cnt+=1
+  if (tuple_list.get(x)==1): cnt+=1
 print(cnt)

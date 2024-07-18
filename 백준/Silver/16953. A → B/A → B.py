@@ -1,0 +1,20 @@
+a,b=map(int,input().split())
+cnt=1
+flag=1
+while(b!=a):
+  if(b%2==0):
+    b=b//2
+    cnt+=1
+  elif(b%10==1):
+    b=b//10
+    cnt+=1
+  else:
+    flag=0
+    print(-1)
+    break
+  if(a>b):
+    flag=0
+    print(-1)
+    break
+if(flag==1):
+  print(cnt)

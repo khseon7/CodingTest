@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+c=1000000007
+res=1
+while(b!=0):
+  if(b%2==1):
+    res*=a
+  a*=a
+  a%=c
+  b//=2
+print(res%c)

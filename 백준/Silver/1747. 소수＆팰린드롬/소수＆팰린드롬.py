@@ -20,7 +20,6 @@ for i in range(2,size+1):
         for j in range(2*i,size+1,i):
             arr[j]=0
 n=int(input())
-i=0
 for i in range(len(res)-1):
     if res[0]>=n:
         print(res[0])
